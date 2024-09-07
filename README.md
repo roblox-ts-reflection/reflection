@@ -64,6 +64,9 @@ getType<typeof foo>();
 getType(foo);
 ```
 
+> [!WARNING]
+> Reflection system does not support union and intersection types.
+
 ## Base usage
 
 ```ts
