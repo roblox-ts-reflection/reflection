@@ -102,7 +102,6 @@ function printTypeProperties<TType>()
 interface SomeType {
     foo: string;
     bar: number;
-    baz: Date;
 }
 
 printTypeProperties<SomeType>();
