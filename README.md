@@ -55,13 +55,13 @@ import { GetType } from "@rbxts/reflection";
 interface IFoo {}
 class Foo implements IFoo {}
 
-getType<IFoo>();
-getType<Foo>();
-getType(Foo);
+GetType<IFoo>();
+GetType<Foo>();
+GetType(Foo);
 
 const foo = new Foo();
-getType<typeof foo>();
-getType(foo);
+GetType<typeof foo>();
+GetType(foo);
 ```
 
 > [!WARNING]
@@ -84,8 +84,8 @@ class Animal implements IAnimal
     }
 }
 
-const typeOfIAnimal: Type = getType<IAnimal>();
-const typeOfAnimal: Type = getType<Animal>();
+const typeOfIAnimal: Type = GetType<IAnimal>();
+const typeOfAnimal: Type = GetType<Animal>();
 ```
 
 ## Get Type of Generic Type Parameter (runtime)
